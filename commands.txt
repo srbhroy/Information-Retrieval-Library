@@ -1,0 +1,13 @@
+-o ( flag to make named output file )
+-c ( flag to make obj )
+-I ( flag to change #Include directory )
+-L ( flag to change location static library directory )
+
+
+g++ -std=c++11 filename.cpp ( converts to exe file )
+g++ -std=c++11 -o filename.o -c filename.cpp  ( converts to obj file )
+g++ -std=c++11 -o main1  library.o main.cpp (links both obj file to make exe)
+c++ -std=c++11 -o main main.cpp library.lib (link main and library ro make exe)
+
+program_name ( to run a program on cmd )
+ar rvs nlpirobj.lib nlpirobj.o ( unix command bundles obj files to static library file )
